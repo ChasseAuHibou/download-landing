@@ -4,7 +4,7 @@
 	border: none; /* Убираем границу */
 	border-radius: 5px; /* Скругление углов */
 	padding: 10px 20px; /* Отступы внутри кнопки (вверх/вниз и по бокам) */
-	font-size: 1.5rem; /* Размер шрифта */
+	font-size: 1rem; /* Размер шрифта */
 	color: #fff; /* Цвет текста */
 	cursor: pointer; /* Курсор при наведении */
 	transition: background-color 0.3s, transform 0.2s; /* Плавный переход цвета и трансформации */
