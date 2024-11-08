@@ -1,36 +1,38 @@
+/* Контейнер для всего содержимого */
 .hero {
-	position: fixed; /* Фиксируем элемент на экране */
-	top: 0; /* Начало с верхней части экрана */
-	left: 0; /* Начало с левой части экрана */
-	width: 100vw; /* Занимает всю ширину окна просмотра */
-	height: 100vh; /* Занимает всю высоту окна просмотра */
+	position: fixed; /* Фиксируем контейнер на экране */
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 		url("../assets/backgroundImg.jpg");
-	background-size: cover; /* Изображение фона заполняет элемент */
-	background-position: center; /* Центрируем изображение */
-	background-repeat: no-repeat; /* Запрещаем повторение изображения */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	display: flex;
+	flex-direction: column;
+	justify-content: space-between; /* Размещаем элементы по вертикали */
 	align-items: center;
-	justify-content: center;
+	padding: 20px;
 	color: #fff;
 	text-align: center;
 }
 
-.hero-content {
-	max-width: 600px;
+/* Общий стиль для всех элементов */
+.hero-item {
+	width: 80%; /* Ширина каждого элемента */
 	padding: 20px;
-	display: flex; /* Используем flexbox для размещения кнопок */
-	flex-direction: column; /* Располагаем кнопки вертикально */
-	gap: 10px; /* Промежуток между кнопками */
-	align-items: center; /* Центрируем кнопки по горизонтали */
+	border-radius: 8px;
+	color: #fff;
+	text-align: center;
 }
 
-.hero h1 {
-	font-size: 3rem;
-	margin-bottom: 1rem;
+/* Позиционирование и цвета для каждого элемента */
+.hero-item.top {
+	background-color: rgba(255, 0, 0, 0.8); /* Красный */
 }
 
-.hero p {
-	font-size: 1.5rem;
-	margin-bottom: 2rem;
+.hero-item.bottom {
+	background-color: #004d997a; /* Зеленый */
 }
