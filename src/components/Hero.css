@@ -30,7 +30,7 @@
 
 /* Позиционирование и цвета для каждого элемента */
 .hero-item.top {
-	background-color: rgba(255, 0, 0, 0.8); /* Красный */
+	background-color: rgba(255, 0, 0, 0.552); /* Красный */
 }
 
 .hero-item.bottom {
